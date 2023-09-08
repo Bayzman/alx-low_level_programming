@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-/*
- * Program to print a string
+/**
+ * main - This is the entry point of the C program
+ * Return: Specifies the return value for the program.
  */
 
 int main(void)
 {
-  printf("with proper grammar, but the outcome is a piece of art,\n"); 
-  return (0);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
+	return (0);
 }
