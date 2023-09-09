@@ -5,7 +5,7 @@
  * return - return value
  */
 
-int main()
+int main(void)
 {
         char alphabet;
 
@@ -19,5 +19,5 @@ int main()
 	}
         putchar('\n');
 
-        return 0;
+        return (0);
 }
