@@ -2,9 +2,10 @@
 
 /**
  * main - entry point
- * return - return value
+ * Return: return value
  */
-int main()
+
+int main(void)
 {
 	int num;
 
@@ -14,5 +15,5 @@ int main()
 	}
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
