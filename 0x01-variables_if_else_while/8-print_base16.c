@@ -2,10 +2,10 @@
 
 /**
  * main - entry point
- * return - return value
+ * Return: return value
  */
 
-int main()
+int main(void)
 {
 	int i;
 	char hexa;
@@ -20,5 +20,5 @@ int main()
 	}
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
