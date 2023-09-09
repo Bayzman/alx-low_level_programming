@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * return - return value
+ * main: entry point
+ * return: return value
  */
 
 int main(void)
