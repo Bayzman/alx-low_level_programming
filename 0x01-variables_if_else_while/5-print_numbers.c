@@ -2,9 +2,9 @@
 
 /**
  * main - entry point
- * return - return value
+ * Return - return value
  */
-int main()
+int main(void)
 {
 	int digit;
 
@@ -12,5 +12,5 @@ int main()
 		printf("%d", digit);
 	printf("\n");
 
-	return 0;
+	return (0);
 }
