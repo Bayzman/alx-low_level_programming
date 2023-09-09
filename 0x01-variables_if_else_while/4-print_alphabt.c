@@ -4,7 +4,7 @@
  * main - entry point
  * return - return value
  */
-int main()
+int main(void)
 {
 	char alpha = 'a';
 
@@ -19,5 +19,5 @@ int main()
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
