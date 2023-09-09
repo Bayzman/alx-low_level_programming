@@ -4,7 +4,7 @@
 
 /**
  * main: entry point
- *
+ * Description: Positive anything is better than negative nothing
  * return: return value of the main function
  */
 
