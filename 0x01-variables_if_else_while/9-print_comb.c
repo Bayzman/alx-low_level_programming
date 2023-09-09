@@ -2,11 +2,11 @@
 
 /**
  * main - entry point
- * return - return value
+ * Return: return value
  * 48-58 is the ASCII equivalent of 0-9
  */
 
-int main()
+int main(void)
 {
 	int i;
 
@@ -21,5 +21,5 @@ int main()
 	}
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
