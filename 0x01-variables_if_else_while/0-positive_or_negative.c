@@ -4,7 +4,7 @@
 
 /**
  * main: entry point
- * Return: return value
+ * Return: returns 0 if there is no error
  */
 
 int main(void)
