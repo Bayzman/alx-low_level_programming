@@ -2,8 +2,9 @@
 
 /**
  * main - entry point
- * return - return value
+ * return: return value
  */
+
 int main(void)
 {
 	char alpha = 'a';
