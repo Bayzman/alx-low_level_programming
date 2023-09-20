@@ -2,7 +2,7 @@
 
 /**
  * print_rev - print a string in reverse
- * @*s: pointer to a char
+ * @s: pointer to a char
  * Return: void
  */
 
@@ -13,10 +13,9 @@ void print_rev(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 		continue;
 
-	while (i >= 0)
+	for (i--; i >= 0; i--)
 	{
 		_putchar(s[i]);
-		i--;
 	}
 	_putchar('\n');
 }
