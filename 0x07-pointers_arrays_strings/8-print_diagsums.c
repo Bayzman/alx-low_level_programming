@@ -1,0 +1,37 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * print_diagsums - compute and display the sum of the diagonals
+ * @a: array of integers
+ * @size: size of array
+ * Return: void
+ */
+
+void print_diagsums(int *a, int size)
+{
+	int i;
+	int sum;
+	int dim;
+
+	i = 0;
+	sum = 0;
+	dim = size * size;
+	while (i < dim)
+	{
+		if (i % (size + 1) == 0)
+			sum += a[i];
+		i++;
+	}
+	printf("%d, ", sum);
+
+	i = 0;
+	sum = 0;
+	while (i < dim)
+	{
+		if (i % (size - 1) == 0 && i != (dim - 1) && i != 0)
+			sum += a[i];
+		i++;
+	}
+	printf("%d\n", sum);
+}
