@@ -14,7 +14,7 @@ int _sqrt(int n, int i)
 	square = i * i;
 	if (n > square)
 	{
-		return _sqrt(n, i + 1);
+		return (_sqrt(n, i + 1));
 	}
 	else if (n == square)
 		return (i);
@@ -36,5 +36,5 @@ int _sqrt_recursion(int n)
 	i = 1;
 	result = _sqrt(n, i);
 
-	return result;
+	return (result);
 }
