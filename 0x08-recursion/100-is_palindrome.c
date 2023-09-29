@@ -36,7 +36,7 @@ int _is_palindrome(char *s, int i, int length)
  * Return: 1  if the string is a palindrome or 0 if not
  */
 
-int is_palindrome(char * s)
+int is_palindrome(char *s)
 {
 	if (*s == 0)
 		return (1);
