@@ -3,6 +3,7 @@
 /**
  * check_prime - helper function to check if n is prime or not
  * @n: int
+ * @i: int divisor
  * Return: int
  */
 
