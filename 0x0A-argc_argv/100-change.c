@@ -25,8 +25,7 @@ int main(int argc, char *argv[])
 	}
 
 	temp = atoi(argv[1]);
-	if (temp < 0)
-		printf("%d", 0);
+
 	while (temp > 1)
 	{
 		for (i = 0; i < 5; i++)
@@ -37,6 +36,11 @@ int main(int argc, char *argv[])
 				temp = temp % coin[i];
 			}
 		}
+	}
+
+	if (temp < 0)
+	{
+		count = 0;
 	}
 
 	if (temp == 1)
