@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	int coin[5] = {25, 10, 5, 2, 1};
 
 	count = 0;
-	if (argc > 2)
+	if (argc > 2 || argc == 1)
 	{
 		printf("Error\n");
 		return (1);
@@ -38,6 +38,9 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
+
+	if (temp == 1)
+		count = 1;
 
 	printf("%d\n", count);
 
