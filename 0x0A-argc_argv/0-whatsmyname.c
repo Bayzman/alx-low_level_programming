@@ -3,8 +3,8 @@
 
 /**
  * main - program that prints its name, followed by a new line
- * @argc - count of command line arguments
- * @argv - 1-dimensional argument vector of char
+ * @argc: count of command line arguments
+ * @argv: 1-dimensional argument vector of char
  * Return: int
  */
 
