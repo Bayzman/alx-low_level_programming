@@ -5,7 +5,3 @@
  * @str: char array
  * Return: array of capitalized words in a string
  */
-
-char *cap_string(char *str)
-{
-	
