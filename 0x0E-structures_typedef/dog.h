@@ -7,6 +7,7 @@
  * @name: char array
  * @age: float
  * @owner: char array
+ * Description: struct data type
  */
 
 struct dog
@@ -15,6 +16,10 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+ * dog_t - Typedef for struct dog
+ */
 
 typedef struct dog dog_t;
 
