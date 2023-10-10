@@ -1,6 +1,5 @@
 #ifndef DOG
 #define DOG
-#include "main.h"
 #include <stdio.h>
 
 /**
