@@ -1,10 +1,8 @@
 #include <stdio.h>
-#include <stddef.h>
-#include <stdlib.h>
 
 /**
  * main - entry point
- * Return - int
+ * Return: int
  */
 
 int main(void)
