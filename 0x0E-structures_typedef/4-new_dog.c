@@ -7,6 +7,7 @@
  * @name: char array
  * @age: float
  * @owner: char array
+ * Description: new_dog
  * Return: dog_t
  */
 
