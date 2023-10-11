@@ -7,7 +7,7 @@
 /**
  * dog_t - Typedef of struct dog
  */
-typedef struct dog dog_t;
+
 
 /**
  * struct dog - struct with name, age, and owner
