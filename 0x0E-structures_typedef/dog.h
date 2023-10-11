@@ -5,6 +5,11 @@
 #include <stddef.h>
 
 /**
+ * dog_t - Typedef of struct dog
+ */
+typedef struct dog dog_t; /* defines struct dog as dog_t */
+
+/**
  * struct dog - struct with name, age, and owner
  * @name: char array
  * @age: float
@@ -18,11 +23,6 @@ struct dog
 	float age;
 	char *owner;
 };
-
-/**
- * dog_t - Typedef of struct dog
- */
-typedef struct dog dog_t; /* defines struct dog as dog_t */
 
 dog_t *new_dog(char *name, float age, char *owner);
 void init_dog(struct dog *d, char *name, float age, char *owner);
