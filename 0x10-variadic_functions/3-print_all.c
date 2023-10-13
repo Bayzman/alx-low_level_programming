@@ -32,7 +32,6 @@ void print_all(const char * const format, ...)
 					printf("%s%d", sep, va_arg(ap, int));
 					break;
 				case 'f':
-					arg = va_arg(ap, int));
 					printf("%s%f", sep, va_arg(ap, int));
 					break;
 				case 's':
