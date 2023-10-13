@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 	int i;
 	char *str;
 	char *separator;
-	char *arg;
+	int arg;
 
 	va_list ap;
 
