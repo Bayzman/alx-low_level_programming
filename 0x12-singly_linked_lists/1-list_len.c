@@ -8,16 +8,16 @@
 
 size_t list_len(const list_t *h)
 {
-    size_t num_elements;
+	size_t num_elements;
 
-    num_elements = 0;
-    while (h != NULL)
-    {
-        if (h->str != NULL)
-            num_elements++;
+	num_elements = 0;
+	while (h != NULL)
+	{
+		if (h->str != NULL)
+			num_elements++;
 
-        h = h->next;
-    }
+		h = h->next;
+	}
 
-    return (num_elements);
+	return (num_elements);
 }
