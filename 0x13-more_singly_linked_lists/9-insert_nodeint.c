@@ -23,14 +23,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	node->n = n;
 	node->next = NULL;
 
+	if (*head == NULL)
+		return (NULL);
+
 	while (temp != NULL)
 	{
 		temp = temp->next;
 		num_nodes++;
 	}
-
-	if (*head == NULL)
-		return (NULL);
 
 	if (num_nodes >= idx)
 	{
