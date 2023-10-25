@@ -1,0 +1,28 @@
+#include "lists.h"
+
+/**
+ * sum_listint - sum of all the data of a linked list
+ * @head: pointer to head
+ * Return: sum of all the data (int)
+ */
+
+int sum_listint(listint_t *head)
+{
+	listint_t *node;
+	int sum;
+
+	sum = 0;
+	node = malloc(sizeof(listint_t));
+	node = head;
+
+	if (head == NULL)
+		return (0);
+
+	while (head != NULL)
+	{
+		sum += node->n;
+		node = node->next;
+	}
+
+	return (sum);
+}
