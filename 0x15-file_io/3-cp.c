@@ -20,7 +20,10 @@ int main(int argc, char *argv[])
 
 	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	if (argc != 3)
-		dprintf(ERR, "Usage: cp file_from file_to\n"), exit(97);
+	{
+		dprintf(ERR, "Usage: cp file_from file_to\n"),
+			exit(97);
+	}
 
 	fd1 = open(argv[1], O_RDONLY);
 	if (fd1 == -1)
