@@ -5,7 +5,7 @@
 /**
  * main - entry point
  * @argc: argument count
- * @argv[]: argument vector
+ * @argv: argument vector
  * Return: 0
  */
 
@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 	int fd2;
 	ssize_t wr1;
 	ssize_t wr2;
-	char buffer[BUF];
 	mode_t mode;
+	char buffer[BUF];
 
 	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	if (argc != 3)
