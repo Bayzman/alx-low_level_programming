@@ -5,7 +5,7 @@
 /**
  * main - entry point
  * @argc: argument count
- * @argv: argument vector
+ * @argv[]: argument vector
  * Return: 0
  */
 
