@@ -1,6 +1,4 @@
 #include "main.h"
-#define BUF 1024
-#define ERR STDERR_FILENO
 
 /**
  * main - entry point

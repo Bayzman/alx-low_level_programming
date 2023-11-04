@@ -1,5 +1,9 @@
 #ifndef MAIN
 #define MAIN
+
+#define BUF 1024
+#define ERR STDERR_FILENO
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
