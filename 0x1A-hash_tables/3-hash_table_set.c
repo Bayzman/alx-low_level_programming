@@ -20,11 +20,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	idx = key_index((const unsigned char *)key, ht->size);
 	node = ht->array[idx];
 
-	if (!node)
+	/*if (!node)
 	{
 		ht->array[idx] = key_val(key, value);
 		return (1);
-	}
+		}*/
 
 	while (!node)
 	{
