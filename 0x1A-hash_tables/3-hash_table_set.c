@@ -55,7 +55,7 @@ hash_node_t *key_val(string key, string value)
 {
 	hash_node_t *node = malloc(sizeof(hash_node_t));
 
-	if (!node)
+	if (node == NULL)
 		return (NULL);
 
 	node->key = strdup(key);
