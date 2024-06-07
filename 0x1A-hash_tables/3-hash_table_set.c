@@ -1,6 +1,7 @@
 #include "hash_tables.h"
 
 hash_node_t *key_val(string key, string value);
+
 /**
  * hash_table_set - adds an element to the hash table
  * @ht: pointer to the hash table
@@ -8,6 +9,7 @@ hash_node_t *key_val(string key, string value);
  * @value: value in the hash table
  * Return: 1 if succeeded or 0 otherwise
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
@@ -51,6 +53,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  * @value: value (str)
  * Return: pointer to node
  */
+
 hash_node_t *key_val(string key, string value)
 {
 	hash_node_t *node = malloc(sizeof(hash_node_t));
