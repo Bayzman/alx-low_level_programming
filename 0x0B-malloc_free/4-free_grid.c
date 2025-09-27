@@ -4,7 +4,7 @@
 /**
  * free_grid - frees up a 2D grid
  * @grid: 2D grid
- * @height: int
+ * @height: height of the grid
  * Return: void
  */
 
@@ -17,6 +17,5 @@ void free_grid(int **grid, int height)
 
 	for (i = 0; i < height; i++)
 		free(grid[i]);
-
 	free(grid);
 }
