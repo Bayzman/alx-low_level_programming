@@ -5,52 +5,32 @@
  * @format: char (c), integer (i), float (f), char * (s)
  * Return: void
  */
-
 void print_all(const char * const format, ...)
 {
 	int i;
-	char *str;
-	char *sep;
-
+	char *str, *sep = "";
 	va_list ap;
 
-	i = 0;
-	sep = "";
-
 	va_start(ap, format);
-
-	if (format)
+	for (i = 0; format && format[i]; i++)
 	{
-		while (format[i])
+		if (format[i] == 'c')
+			printf("%s%c", sep, va_arg(ap, int));
+		else if (format[i] == 'i')
+			printf("%s%d", sep, va_arg(ap, int));
+		else if (format[i] == 'f')
+			printf("%s%f", sep, va_arg(ap, double));
+		else if (format[i] == 's')
 		{
-			switch (format[i])
-			{
-				case 'c':
-					printf("%s%c", sep, va_arg(ap, int));
-					break;
-				case 'i':
-					printf("%s%d", sep, va_arg(ap, int));
-					break;
-				case 'f':
-					printf("%s%f", sep,
-					       va_arg(ap, double));
-					break;
-				case 's':
-					str = va_arg(ap, char *);
-					if (!str)
-						str = "(nil)";
-
-					printf("%s%s", sep, str);
-					break;
-				default:
-					i++;
-					continue;
-			}
-			sep = ", ";
-			i++;
+			str = va_arg(ap, char *);
+			if (!str)
+				str = "(nil)";
+			printf("%s%s", sep, str);
 		}
+		else
+			continue;
+		sep = ", ";
 	}
-
 	printf("\n");
 	va_end(ap);
 }
