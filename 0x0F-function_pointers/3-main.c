@@ -3,8 +3,8 @@
 
 /**
  * main - entry point
- * @argc - argument count
- * @argv - array of argument
+ * @argc: argument count
+ * @argv: array of argument
  * Return: int
  */
 

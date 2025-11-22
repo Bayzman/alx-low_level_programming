@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * op_add - sum two integers
+ * op_add - adds two integers
  * @a: int
  * @b: int
  * Return: int
@@ -14,7 +14,7 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subtract two integers
+ * op_sub - subtracts two integers
  * @a: int
  * @b: int
  * Return: int
@@ -26,7 +26,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - multiply two integers
+ * op_mul - multiplies two integers
  * @a: int
  * @b: int
  * Return: int
@@ -38,7 +38,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - divide two integers
+ * op_div - divides two integers
  * @a: int
  * @b: int
  * Return: int
@@ -56,7 +56,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - remainder of the division of two integers
+ * op_mod - returns the remainder of the division of two integers
  * @a: int
  * @b: int
  * Return: int
