@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * get_op_funct - selects the correct function to perform the operation
+ * get_op_func - selects the correct function to perform the operation
  * asked by the user
  * @s: char
  * Return: int
@@ -18,7 +18,7 @@ int (*get_op_func(char *s))(int, int)
 		      {NULL, NULL}
 	};
 
-	int i;
+	static int i;
 
 	i = 0;
 	while (i < 5)
