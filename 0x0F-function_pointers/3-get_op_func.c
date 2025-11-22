@@ -18,7 +18,7 @@ int (*get_op_func(char *s))(int, int)
 		      {NULL, NULL}
 	};
 
-	static int i;
+	int i;
 
 	i = 0;
 	while (i < 5)
